@@ -76,8 +76,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/hb_moive>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"telegram.me/hb_moive")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/meharmo>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"telegram.me/meharmo")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -955,7 +955,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('🍁 Uᴘᴅᴀᴛᴇ', url=f'https://t.me/hbbotz')
+                              InlineKeyboardButton('🍁 Uᴘᴅᴀᴛᴇ', url=f'https://t.me/+Iz8dm9E8IJ9jNjdl')
                              ]
                             ]
                         )
@@ -1045,7 +1045,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🍁 Uᴘᴅᴀᴛᴇ', url=f'https://t.me/hbbotz')
+                  InlineKeyboardButton('🍁 Uᴘᴅᴀᴛᴇ', url=f'https://t.me/+Iz8dm9E8IJ9jNjdl')
                  ]
                 ]
             )
@@ -1330,7 +1330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/hb_moive")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/meharmo")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1355,7 +1355,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/hbbotz")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/meharmo")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1471,8 +1471,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "money_bot":
         buttons = [[
-            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/hb_moive'),
-            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
+            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/meharmo'),
+            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/+Iz8dm9E8IJ9jNjdl')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
         ]]
@@ -1581,10 +1581,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/+Iz8dm9E8IJ9jNjdl'),
             InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ', callback_data='source')
         ],[
-            InlineKeyboardButton('Rᴇᴘᴏʀᴛ Bᴜɢꜱ & Fᴇᴇᴅʙᴀᴄᴋ',url=f'https://t.me/naruto_support_ch')
+            InlineKeyboardButton('Rᴇᴘᴏʀᴛ Bᴜɢꜱ & Fᴇᴇᴅʙᴀᴄᴋ',url=f'https://t.me/meharmo')
         ],[ 
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -1864,7 +1864,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="https://t.me/owernarutobot")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="https://t.me/Promotion990")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
