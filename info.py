@@ -45,8 +45,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Hbbotz")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://harisin2008s:8uIRrM2BXf43aFEo@cluster0.ebmu6vh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
